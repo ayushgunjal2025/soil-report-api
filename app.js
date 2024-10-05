@@ -71,7 +71,7 @@ app.get('/soilreport/:id',(req,res)=>{
 app.post('/soilreport',(req,res)=>{
     const report = req.body;
     db.collection('soilreport')
-    .insertOne(student)
+    .insertOne(report)
     .then((result)=>{
         res.status(200).json({result});
     })
